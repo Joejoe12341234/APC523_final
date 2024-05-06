@@ -39,6 +39,9 @@ def field_plots(data, timestep, Re=None):
 
     fig = plt.figure(figsize=(12, 3))
     gs = matplotlib.gridspec.GridSpec(nrows=1, ncols=4)
+    
+    # Get number of grid cells
+    N = len(data['x'].values)
 
     # Velocity magnitude
     X, Z = np.meshgrid(data['x'], data['z'])
@@ -96,5 +99,5 @@ def field_plots(data, timestep, Re=None):
             ax.set_yticklabels([])
 
     # Define title formatting
-    title_str = 'Time: {0:.2f} s; Re = {3:.2f}'.format(time_index*dt, U, nu, Re)
+    title_str = 'Time: {0:.2f} s; N = {1}; Re = {2:.2f}'.format(time_index*dt, N, Re)
     fig.suptitle(title_str, ha='center', y=1.2)
