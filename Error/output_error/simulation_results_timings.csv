@@ -1,0 +1,13 @@
+Reynolds Number,Timestep Method,Spatial Method,Execution Time (s)
+10,leapfrog,QUICK,20.13271188735962
+10,leapfrog,cdf2,5.686635971069336
+10,explicit_euler,QUICK,25.094120264053345
+10,explicit_euler,cdf2,3.918511152267456
+10,projection,QUICK,25.065093994140625
+10,projection,cdf2,3.954969644546509
+100,leapfrog,QUICK,365.4850699901581
+100,leapfrog,cdf2,81.51519989967346
+100,explicit_euler,QUICK,501.57359790802
+100,explicit_euler,cdf2,674.2905011177063
+100,projection,QUICK,1135.205305814743
+100,projection,cdf2,80.98083400726318
