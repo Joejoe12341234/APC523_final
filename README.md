@@ -1,6 +1,6 @@
 ## APC523-AST523-MAE507-CSE523_S2024 Numerical Algorithms for Scientific Computing: Final Project
-Authors: Joseph Lockwood and Gabriel Rios (gr7610) \
-Location on `adroit`: `/home/gr7610/apc_523/APC523_final`
+__Authors__: Joseph Lockwood and Gabriel Rios (gr7610) \
+__Location on `adroit`__: `/home/gr7610/apc_523/APC523_final`
 
 ### Summary
 This set of scripts simulates a bottom-driven cavity flow in 2D using an approximation of the Navier-Stokes equations. This model is run using `main.py` from the command line. This model has options for grid size, flow speed, flow viscosity, target Courant-Friedrich-Lewy number, model runtime, the temporal and spatial discretization methods, and gives the user the option to output plots for a given model time and NumPy arrays.
