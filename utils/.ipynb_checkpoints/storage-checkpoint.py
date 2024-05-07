@@ -10,6 +10,10 @@ import numpy as np, xarray as xr
 # Utility packages
 import time
 
+# Internal imports
+from run import initialize, integrate
+from utils import storage, helper, math, solver, visualization
+
 def dump(data, model_time, dt, Re, spatial_method, timestep_method):
     '''
     Method to save xArray data for velocity (u, w) and pressure (p) for a given Reynolds number (Re) 
@@ -27,4 +31,4 @@ def dump(data, model_time, dt, Re, spatial_method, timestep_method):
         # Output array
         array_out = data[field].isel(t=time_index).values
         # Filename
-        np.save('assets/{0}-{1}s-Re_{2}-space_{3}-time_{4}.npy'.format(field, model_time, Re, spatial_method, timestep_method), array_out)
+        np.save('../assets/{0}-{1}s-Re_{2}-space_{3}-time_{4}.npy'.format(field, model_time, Re, spatial_method, timestep_method), array_out)

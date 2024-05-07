@@ -87,3 +87,6 @@ def field_plots(data, timestep, dt, U, nu, Re):
     # Define title formatting
     title_str = 'Time: {0:.3f} s; N = {1}; Re = {2:.2f}'.format(timestep, N, Re)
     fig.suptitle(title_str, ha='center', y=1.2)
+    
+    filename = 'field_plot-Re_{0}-t_{1:.2f}s.png'.format(Re, timestep)
+    plt.savefig('../figs/{0}'.format(filename), dpi=300, bbox_inches='tight')
